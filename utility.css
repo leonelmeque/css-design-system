@@ -1,0 +1,100 @@
+/* ------------ */
+/* Custom Props */
+/* ------------ */
+
+:root {
+    /* colors */
+    --clr-dark: 200 35% 7%;
+    --clr-light: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+    --flex: auto;
+
+    /* fonts-sizes */
+    --fs-900: 9.375rem;
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.175rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+
+    /* font-families */
+    --ff-serif: "Bellefair", serif;
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    --ff-sans-normal: "Barlow", sans-serif;
+
+}
+
+/* -------------- */
+/* Utility classes*/
+/* -------------- */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+    flex: var(--flex);
+}
+
+.flex--center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex--column{
+    flex-direction: column;
+}
+
+.flex--row{
+    flex-direction: row;
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.container {
+    /* checks the left and the right */
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: 80rem;
+}
+
+/* we use still utility for screen-readers only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Colors */
+.bg-dark {
+    background-color: hsl(var(--clr-dark));
+}
+.bg-accent {
+    background-color: hsl(var(--clr-light));
+}
+.bg-white {
+    background-color: hsl(var(--clr-white));
+}
+
+.text-dark {
+    color: hsl(var(--clr-dark));
+}
+.text-accent {
+    color: hsl(var(--clr-light));
+}
+.text-white {
+    color: hsl(var(--clr-white));
+}
+
+/* .example-component{
+    background-color: hsl(var(--clr-light) / .3);
+} */
