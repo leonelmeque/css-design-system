@@ -21,10 +21,25 @@ picture {
     margin: 0;
 }
 
+/* typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+p {
+   font-weight: 400;
+}
+
 /* body */
 body {
     line-height: 1.5;
     min-height: 100vh;
+    font-family: var(--ff-sans-normal);
+    font-size: var(--fs-400);
+    background: hsl(var(--clr-dark));
+    color: hsl(var(--clr-white));
 }
 
 /* images */
