@@ -1,0 +1,8 @@
+{
+  "name": "css-design-system",
+  "version": "1.0.0",
+  "description": "A css design system",
+  "main": "index.js",
+  "author": "Leonel Meque",
+  "license": "MIT"
+}
