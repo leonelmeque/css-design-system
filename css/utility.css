@@ -2,6 +2,8 @@
 /* Utility classes*/
 /* -------------- */
 
+
+/* Layout */
 .flex {
     display: flex;
     gap: var(--gap, 1rem);
@@ -24,6 +26,16 @@
 .grid {
     display: grid;
     gap: var(--gap, 1rem);
+}
+
+/* select every sibling before it */
+/* .flow > * + * {
+    margin-top: 1rem;
+    outline: 1px solid red;
+} */
+.flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-space, 1rem);
+    /* outline: 1px solid red; */
 }
 
 .container {
@@ -137,7 +149,9 @@
 }
 
 .numbered-title span {
-    margin-right: .5em;
+    margin-right: 0.5em;
     font-weight: 700;
-    color: hsl(var(--clr-white) / .25);
+    color: hsl(var(--clr-white) / 0.25);
 }
+
+/* Spacing */
